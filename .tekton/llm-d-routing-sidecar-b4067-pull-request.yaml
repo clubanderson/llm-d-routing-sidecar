@@ -344,9 +344,6 @@ spec:
         operator: in
         values:
         - "false"
-      workspaces:
-      - name: scan-workspace
-        workspace: scan-ws
     - name: ecosystem-cert-preflight-checks
       params:
       - name: image-url
@@ -596,9 +593,6 @@ spec:
         values:
         - "false"
     workspaces:
-    - name: scan-ws
-      emptyDir:
-        sizeLimit: 5Gi
     - name: git-auth
       optional: true
     - name: netrc
